@@ -38,3 +38,44 @@ body {
 .border        {border: 1px solid var(--red);}
 .w100Perc      {width: 100%;}
 .h100Vh        {height: 100vh;}
+
+/* MAIN STYLE */
+h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+main button {
+    padding: .4rem 1rem;
+    background-color: #273662;
+    color: #F9FCFD;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: transparent;
+    margin-top: 6rem;
+}
+
+button:hover {
+    background-color: #31447bdb;
+    border: 1px solid #13151E;
+}
+
+@keyframes fly {
+    0% {
+        top: 0%;
+        left: 0%;
+    }
+
+    75% {
+        top: 50%;
+        left: 50%;
+        transform: rotate(190deg);
+    }
+
+    100% {
+        top: 0%;
+        left: 100%;
+        
+    }
+}
