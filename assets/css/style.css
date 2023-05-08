@@ -53,7 +53,7 @@ main button {
     letter-spacing: 2px;
     border-radius: 10px;
     border: transparent;
-    margin-top: 6rem;
+    margin-top: 3rem;
 }
 
 button:hover {
@@ -76,6 +76,6 @@ button:hover {
     100% {
         top: 0%;
         left: 100%;
-        
+
     }
 }

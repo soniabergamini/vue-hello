@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <!-- Google Font -->
@@ -23,7 +25,8 @@
         <main v-bind:class="mainClasses" :style="imgBackground">
             <h1>{{title}}</h1>
             <img :src="image.imgSrc" :alt="image.imgAltText" :width="image.imgWIdth" :class="image.imgClasses" :style="image.imgStyle">
-            <button :class="button.btnClasses" @click="astroFly">{{button.btnText}}</button>
+            <button :class="button.btnFlyClasses" @click="astroFly">{{button.btnFlyText}}<i class="fa-solid fa-user-astronaut"></i></button>
+            <button :class="button.btnPlanetClasses" @click="changePlanet"><i class="fa-solid fa-shuttle-space"></i>{{button.btnPlanetText}}</button>
         </main>
     </div>
     <!-- Script JS -->

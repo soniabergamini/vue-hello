@@ -5,7 +5,7 @@ createApp({
         return {
             title: "Welcome!",
             mainClasses: "dFlex justyCenter alignCenter fDirecCol h100Vh w100Perc",
-            imgBackground: "background-image: url(./assets/img/wallpaper.jpeg)",
+            imgBackground: "background-image: url(./assets/img/wallpaper.jpeg); background-size: 100%;",
             image: {
                 imgSrc: "./assets/img/astro.png",
                 imgAltText: "astronaut-img",
@@ -14,17 +14,26 @@ createApp({
                 imgStyle: "position: relative",
             },
             button: {
-                btnText: "FLY WITH ME",
-                btnClasses: "cPointer",
+                btnFlyText: 'FLY WITH ME ',
+                btnFlyClasses: "cPointer",
+                btnPlanetText: ' FLY ON MARS',
+                btnPlanetClasses: "cPointer",
             }
         }
     },
     methods: {
-        // Add animation to another element on page
+        // Add animation to another element on page (astronaut image)
         astroFly() {
-            this.title = "Welcome on Mars!",
+            this.title = "Welcome to Solaris!",
             this.image.imgStyle = "animation: fly 10s linear infinite",
-                this.button.btnClasses = "dNone"
+            this.button.btnFlyClasses = "dNone"
+        },
+        changePlanet() {
+            this.title = "Welcome to Mars!",
+            this.image.imgStyle = "animation: fly 10s linear infinite",
+            this.button.btnPlanetClasses = "dNone",
+            this.button.btnFlyClasses = "dNone",
+            this.imgBackground = "background-image: url(./assets/img/mars.jpeg); background-size: 100%;"
         }
     }
 }).mount('#app')
