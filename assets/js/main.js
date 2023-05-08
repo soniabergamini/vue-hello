@@ -28,6 +28,7 @@ createApp({
             this.image.imgStyle = "animation: fly 10s linear infinite",
             this.button.btnFlyClasses = "dNone"
         },
+        // Change main background, add style and animation to other elements on page
         changePlanet() {
             this.title = "Welcome to Mars!",
             this.image.imgStyle = "animation: fly 10s linear infinite",
