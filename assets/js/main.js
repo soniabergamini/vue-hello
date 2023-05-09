@@ -10,8 +10,8 @@ createApp({
                 imgSrc: "./assets/img/astro.png",
                 imgAltText: "astronaut-img",
                 imgWIdth: "200",
-                imgClasses: "pAbsolute",
-                imgStyle: "position: relative",
+                imgClasses: "pRelative",
+                imgStyle: "",
             },
             button: {
                 btnFlyText: 'FLY WITH ME ',
@@ -26,12 +26,14 @@ createApp({
         astroFly() {
             this.title = "Welcome to Solaris!",
             this.image.imgStyle = "animation: fly 10s linear infinite",
-            this.button.btnFlyClasses = "dNone"
+            this.button.btnFlyClasses = "dNone",
+            this.image.imgClasses = "pAbsolute"
         },
         // Change main background, add style and animation to other elements on page
         changePlanet() {
             this.title = "Welcome to Mars!",
             this.image.imgStyle = "animation: fly 10s linear infinite",
+                this.image.imgClasses = "pAbsolute",
             this.button.btnPlanetClasses = "dNone",
             this.button.btnFlyClasses = "dNone",
             this.imgBackground = "background-image: url(./assets/img/mars.jpeg); background-size: 100%;"
